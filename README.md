@@ -111,7 +111,17 @@ The application currently stores book data in memory while the server is running
 
 ## 📸 Screenshots
 
-Screenshots of the application will be added here.
+### Home Page
+
+![Book Tracker Home Page](screenshots/home.png)
+
+### Book Details
+
+![Book Details Page](screenshots/book-details.png)
+
+### Mobile View
+
+![Book Tracker Mobile View](screenshots/mobile.png)
 
 ## 🌐 Live Demo
 
