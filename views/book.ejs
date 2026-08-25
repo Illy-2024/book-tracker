@@ -1,0 +1,59 @@
+<%- include("./partials/header.ejs") %> 
+<main class="main-content">
+    <section class="book-details-section">
+
+        <div class="back-link">
+            <h4>
+                <a href="/">
+                    <i class="bi bi-arrow-left"></i>
+                    Back to Books
+                </a>
+            </h4>
+        </div>
+
+        <div class="book-details-header d-flex">
+            <div class="book-cover">
+                <i class="bi bi-journal-bookmark-fill"></i>
+            </div>
+
+            <div class="book-details-info"> 
+                <h3><%= data.title %></h3>
+                <h4><%= data.author %></h4>
+            </div>
+        </div>
+        
+        <div class="line"></div>
+
+        <div class="book-details-description">
+            <h3>Description</h3>
+            <p><%= data.description %></p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="book-details-actions d-flex flex-row-reverse">
+            <div class="remove-action">
+                <form action="/books/<%= data.id %>/delete" method="POST" >
+                    <button type="submit" class="btn remove-btn">
+                        <i class="bi bi-trash"></i>
+                        Remove
+                    </button>
+                </form> 
+            </div>
+
+            <div class="edit-action me-auto">
+                <form action="/books/<%= data.id %>/edit" method="GET" >
+                    <button type="submit" class="btn edit-btn">
+                        <i class="bi bi-pen"></i>
+                        Edit
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<%- include("./partials/footer.ejs") %> 
+
+

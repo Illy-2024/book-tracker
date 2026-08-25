@@ -1,0 +1,62 @@
+<%- include("./partials/header.ejs") %> 
+
+<main class="main-content">
+    <section class="book-details-section">
+
+        <div class="back-link">
+            <h4>
+                <a href="/">
+                    <i class="bi bi-arrow-left"></i>
+                    Back to Books
+                </a>
+            </h4>
+        </div>
+
+        <div class="book-details-header d-flex">
+            <div class="book-cover">
+                <i class="bi bi-journal-bookmark-fill"></i>
+            </div>
+
+            <div class="book-details-info"> 
+                <h3>Edit Book</h3>
+                <p>update the details of your book.</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <form action="/books/<%= book.id %>/edit" method="POST">
+            <div class="form-group edit-book-details">
+                <label>Title</label>
+                <input type="text" name="title" value="<%= book.title %>" />
+            </div>
+
+            <div class="form-group edit-book-details">
+                <label>Author</label>
+                <input type="text" name="author" value="<%= book.author %>" />
+            </div>
+
+            <div class="form-group edit-book-details">
+                <label>Description</label>
+                <textarea name="description"><%= book.description %></textarea>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="edit-actions d-flex justify-content-between">
+                <a href="/books/<%= book.id %>" class="btn edit-btn">
+                    <i class="bi bi-x-square"></i>
+                    Cancel
+                </a>
+
+                <button type="submit" class="btn save-btn">
+                    <i class="bi bi-floppy"></i>
+                    Save Changes
+                </button>
+            </div>
+        </form>
+
+    </section>
+</main>
+
+<%- include("./partials/footer.ejs") %> 
