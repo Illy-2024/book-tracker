@@ -142,7 +142,3 @@ Possible improvements for the project include:
 - Add reading status such as "Want to Read", "Reading", and "Completed"
 - Add search and filtering
 - Add user authentication
-
-## 📄 License
-
-This project was created for learning and practice purposes.
