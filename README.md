@@ -123,10 +123,6 @@ The application currently stores book data in memory while the server is running
 
 ![Book Tracker Mobile View](screenshots/mobile.png)
 
-## 🌐 Live Demo
-
-A live version of the application will be available here after deployment.
-
 ## 🎯 Project Purpose
 
 The purpose of this project is to practice and understand:
